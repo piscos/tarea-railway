@@ -36,4 +36,7 @@ app.get('/api/usuarios/delete/:id', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Servidor activo en puerto ${port}`));
+
+app.listen(port, "0.0.0.0", () => {
+    console.log(`Servidor ejecutándose en el puerto ${port}`);
+});
